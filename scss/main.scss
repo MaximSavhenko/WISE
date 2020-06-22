@@ -68,6 +68,13 @@ h1, h2, h3, h4, h5, h6, ul , p {
     font-weight: 700;
     color: #16182D;
   }
+
+  .preview {
+    color: #0000FF;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
   
   .btn {
     display: flex;
@@ -92,12 +99,13 @@ h1, h2, h3, h4, h5, h6, ul , p {
 
   }
 
-  input {
+  input[type=text]{
     display: block;
     width: 100%;
     height: 50px;
     padding: 0 20px;
     border: 2px solid #FFFFFF;
+    background: none;
     border-radius: 16px;
     font-size: 14px;
     color: #fff;
@@ -119,6 +127,7 @@ textarea {
     padding: 25px 31px;
     border: 2px solid #FFFFFF;
     border-radius: 16px;
+    background: none;
     font-size: 14px;
     color: #fff;
     transition: all .2s;
@@ -324,10 +333,6 @@ textarea {
     }
 
     &__preview {
-        text-transform: uppercase;
-        color: #0000FF;
-        font-size: 20px;
-        font-weight: 700;
         margin-bottom: 15px;
     }
 
@@ -343,14 +348,24 @@ textarea {
 
     &__col-wrap {
         display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__col-outer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
         flex-wrap: wrap;
-        margin: 0 -80px 0 0;
+
     }
 
     &__col {
-        width: 33.3333%;
-        padding-right: 80px;
+        width: calc( ( 100% - 240px )/3); 
         margin-bottom: 78px;
+        @include b(tablet) {
+            width: calc( ( 100% - 100px )/2); 
+        }
 
         &:nth-child(4) {
             margin-bottom: 0;
@@ -370,7 +385,7 @@ textarea {
         flex-direction: column;
         border-radius: 16px;
         box-shadow: -5px 12px 30px rgba(209, 217, 230, 0.5), 5px -12px 30px rgba(209, 217, 230, 0.3);
-        padding: 30px 0;
+        padding: 30px 30px;
         height: 100%;
     }
 
@@ -381,10 +396,16 @@ textarea {
     }
 
     &__col-link {
-        font-size: 14px;
-        color: #FB5018;
         position: relative;
+        a {
+            font-size: 14px;
+            color: #FB5018;
+            padding-right: 24px;
+            @include trs;
 
+            &:hover {
+                color: #1a91d0;
+            }
             &::after{
                 content: '';
                 width: 2px;
@@ -393,21 +414,32 @@ textarea {
                 background-color: #FB5018;
                 display: block;
                 position: absolute;
-                right: -30px;
-                top: -20px;
+                right: 6px;
+                top: 4px;
+                @include trs;
             }
             &::before{
                 content: '';
-                width: 11px;
-                height: 11px;
+                width: 10px;
+                height: 10px;
                 border-bottom: 2px solid #FB5018;
                 border-right: 2px solid #FB5018;
                 transform: rotate(-45deg);
-                position: absolute;
                 display: block;
-                right: -30px;
-                
+                position: absolute;
+                right: 0px;
+                top: 5px;
+                @include trs;
             }
+            &:hover::after {
+                right: -4px;
+            }
+            &:hover::before {
+                right: -10px;
+            }
+        }
+
+            
     }
 
     &__col-caption {
@@ -429,10 +461,6 @@ textarea {
     }
 
     &__preview {
-        color: #0000FF;
-        font-size: 20px;
-        font-weight: 700;
-        text-transform: uppercase;
         margin-bottom: 15px;
     }
 
@@ -449,16 +477,28 @@ textarea {
 
     &__main-wrap {
         display: flex;
-        justify-content: flex-end;
+    }
+
+    &__img {
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__numbers-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 
     &__numbers {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
-        padding-right: 200px;
         position: relative;
+        width: 60%;
         
         &::after{
             content: '';
@@ -468,7 +508,7 @@ textarea {
             width: 1px;
             height: 215px;
             position: absolute;
-            z-index: -5;
+            z-index: -1;
             top: 70px;
         }
         &::before{
@@ -479,7 +519,7 @@ textarea {
             width: 1px;
             height: 215px;
             position: absolute;
-            z-index: -5;
+            z-index: -1;
             bottom: 307px;
         } 
         
@@ -498,7 +538,6 @@ textarea {
     }
 
     &__numbers-items {
-        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -521,7 +560,8 @@ textarea {
     &__items-wrap{
         display: flex;
         flex-direction: column;
-    
+        align-items: flex-end;
+        width: 40%;
     }
 
     &__items {
@@ -532,6 +572,10 @@ textarea {
         box-shadow: -5px 12px 30px rgba(209, 217, 230, 0.5), 5px -12px 30px rgba(209, 217, 230, 0.3);
         border-radius: 16px;
         margin-bottom: 55px;
+
+        &:nth-child(2) {
+            margin-right: 100px;
+        }
 
         &:last-child {
             margin-bottom: 0;
@@ -558,6 +602,11 @@ textarea {
         a {
             color: #FB5018;
             font-size: 14px;
+            @include trs;
+
+            &:hover {
+                color: #1a91d0;
+            }
         }
     }
 }
@@ -572,10 +621,6 @@ textarea {
     }
 
     &__preview {
-        color: #0000FF;
-        font-size: 20px;
-        text-transform: uppercase;
-        font-weight: 700;
         margin-bottom: 15px;
     }
 
@@ -585,10 +630,44 @@ textarea {
 
     &__link {
         text-align: right;
-        width: 100%;
+        width: 100%;  
+        position: relative;
         a {
             color: #FB5018;
             font-size: 18px;
+            padding-right: 24px;
+            &::after{
+                content: '';
+                width: 2px;
+                height: 12px;
+                transform: rotate(90deg);
+                background-color: #FB5018;
+                display: block;
+                position: absolute;
+                right: 6px;
+                top: 6px;
+                @include trs;
+            }
+            &::before{
+                content: '';
+                width: 10px;
+                height: 10px;
+                border-bottom: 2px solid #FB5018;
+                border-right: 2px solid #FB5018;
+                transform: rotate(-45deg);
+                display: block;
+                position: absolute;
+                right: 0px;
+                top: 7px;
+                @include trs;
+            }
+            &:hover::after {
+                right: -4px;
+                color: #1a91d0;
+            }
+            &:hover::before {
+                right: -10px;
+            }
         }
     }
 
@@ -654,10 +733,6 @@ textarea {
     }
 
     &__preview {
-        color: #0000FF;
-        font-size: 20px;
-        font-weight: 700;
-        text-transform: uppercase;
         margin-bottom: 15px;
     }
 
@@ -669,9 +744,43 @@ textarea {
         width: 100%;
         text-align: right;
         margin-bottom: 60px;
+        position: relative;
         a {
             color: #FB5018;
             font-size: 18px;
+            padding-right: 24px;
+            &::after{
+                content: '';
+                width: 2px;
+                height: 12px;
+                transform: rotate(90deg);
+                background-color: #FB5018;
+                display: block;
+                position: absolute;
+                right: 6px;
+                top: 6px;
+                @include trs;
+            }
+            &::before{
+                content: '';
+                width: 10px;
+                height: 10px;
+                border-bottom: 2px solid #FB5018;
+                border-right: 2px solid #FB5018;
+                transform: rotate(-45deg);
+                display: block;
+                position: absolute;
+                right: 0px;
+                top: 7px;
+                @include trs;
+            }
+
+            &:hover::after {
+                right: -4px;
+            }
+            &:hover::before {
+                right: -10px;
+            }
         }
     }
 
@@ -727,10 +836,6 @@ textarea {
     }
 
     &__preview {
-        color: #0000FF;
-        font-size: 20px;
-        font-weight: 700;
-        text-transform: uppercase;
         margin-bottom: 15px;
     }
 
@@ -798,10 +903,6 @@ textarea {
     }
 
     &__preview {
-        color: #0000FF;
-        font-size: 20px;
-        font-weight: 700;
-        text-transform: uppercase;
         margin-bottom: 15px;
     }
 
@@ -949,10 +1050,7 @@ textarea {
             width: 10px;
             fill: #fff;
             margin-right: 4px;
-        }
-        
-            
-
+        }   
     }
 
     &__menu {
