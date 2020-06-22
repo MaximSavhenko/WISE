@@ -132,15 +132,11 @@ input {
   color: #fff;
   transition: all 0.2s;
 }
-
-input:focus,
-textarea:focus {
-  border-color: #282b31;
-}
-
-input::placeholder,
-textarea::placeholder {
+input::placeholder {
   color: #FFFFFF;
+}
+input:focus {
+  border-color: #282b31;
 }
 
 textarea {
@@ -149,12 +145,17 @@ textarea {
   height: 210px;
   resize: none;
   padding: 25px 31px;
-  background-color: #f8f9fa;
-  border: 1px solid #e7e8ea;
-  border-radius: 5px;
+  border: 2px solid #FFFFFF;
+  border-radius: 16px;
   font-size: 14px;
   color: #fff;
   transition: all 0.2s;
+}
+textarea::placeholder {
+  color: #FFFFFF;
+}
+textarea:focus {
+  border-color: #282b31;
 }
 
 .heading {
@@ -660,6 +661,9 @@ textarea {
   color: #0000FF;
 }
 
+.realization {
+  padding-bottom: 118px;
+}
 .realization__wrap {
   display: flex;
   justify-content: center;
