@@ -114,11 +114,13 @@ h1, h2, h3, h4, h5, h6, ul , p {
     display: block;
     width: 100%;
     height: 50px;
-    padding: 0 20px;
+    padding: 12px 24px;
     border: 2px solid #FFFFFF;
     background: none;
     border-radius: 16px;
     font-size: 14px;
+    font-family: "Montserrat";
+    font-weight: 700;
     color: #fff;
     transition: all .2s;
 
@@ -128,6 +130,55 @@ h1, h2, h3, h4, h5, h6, ul , p {
     &:focus {
         border-color: #282b31;
     }
+}
+
+input[type=file]{
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 12px 24px;
+    border: 2px dashed #FFFFFF;
+    background: none;
+    border-radius: 16px;
+    font-size: 14px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: #fff;
+    transition: all .2s;
+
+    &::placeholder {
+        color: #FFFFFF;
+    }
+    &:focus {
+        border-color: #282b31;
+    }
+
+    
+}
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+    z-index: -1;
+
+        +label {
+        
+            width: 100%;
+            padding: 15px 40px;
+            font-size: 14px;
+            font-family: "Montserrat";
+            font-weight: 700;
+            color: #fff;
+            cursor: pointer;
+            border: 2px dashed #FFFFFF;
+            background: none;
+            border-radius: 16px;
+            display: inline-block;
+        }
+
 }
 
 textarea {
@@ -135,11 +186,13 @@ textarea {
     width: 100%;
     height: 210px;
     resize: none;
-    padding: 25px 31px;
+    padding: 12px 24px;
     border: 2px solid #FFFFFF;
     border-radius: 16px;
     background: none;
     font-size: 14px;
+    font-family: "Montserrat";
+    font-weight: 700;
     color: #fff;
     transition: all .2s;
 
@@ -150,6 +203,29 @@ textarea {
         border-color: #282b31;
     }
 }
+
+select {
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: 12px 24px;
+    border: 2px solid #FFFFFF;
+    background: none;
+    border-radius: 16px;
+    font-size: 14px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: #fff;
+    transition: all .2s;
+}
+
+option {
+    color: #000;
+    font-size: 14px;
+    font-family: "Montserrat";
+}
+
+
 
 .header {
       
@@ -930,18 +1006,23 @@ textarea {
 
     &__imput {
         margin-right: 20px;
+        margin-bottom: 16px;
         &:last-child {
             margin-right: 0;
         }
     }
 
     &__select {
+        margin-bottom: 16px;
     }
 
     &__textarea {
+        margin-bottom: 16px;
     }
 
     &__file {
+        margin-bottom: 16px;
+        position: relative;
     }
 
     &__btn {
@@ -986,16 +1067,18 @@ textarea {
 
     &__telephone {
         margin-bottom: 14px;
-        font-weight: 700;
-        font-size: 20px;
-        color: #fff;
-        display: block;
+        a {
+            font-weight: 700;
+            font-size: 20px;
+            color: #fff;
+        }
     }
 
     &__eamil {
         margin-bottom: 32px;
-        display: block;
-        color: #fff;
+        a {
+            color: #fff;
+        }
         
     }
 

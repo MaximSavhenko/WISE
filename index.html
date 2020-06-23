@@ -326,12 +326,13 @@
                 </div>
             </div>
             <div class="map__main-wrap">
-                <div class="map__img">
-                    <img src="./img/world_map.png" alt="map">
-                </div>
                 <div class="map__avatar">
                     <img src="./img/Avator.png" alt="avatar">
                 </div>
+                <div class="map__img">
+                    <img src="./img/world_map.png" alt="map">
+                </div>
+                
                 <div class="map__comment">
                     <p>Здесь будет отзыв о нас. По своей сути рыбатекст является альтернативой традиционному</p>
                     <span>Мария Невич</span>
@@ -372,7 +373,11 @@
                         <textarea placeholder="Описание проекта"></textarea>
                     </div>
                     <div class="realization__file">
-                        <input type="file">
+                        <input type="file" name="file" id="file" class="inputfile" />
+                        <label for="file">
+                            <img src="./img/file.svg" alt="file">
+                            Прикрепить файл
+                        </label>
                     </div>
                     <div class="realization__btn btn">
                         <button>Отправить</button>
@@ -395,17 +400,11 @@
                     <div class="footer__descr">
                         <p>web solution for business</p>
                     </div>
-                    <a href="tel:+1(315)2153228" class="footer__telephone"> +1 (315) 215 32 28</a>
-                    <a href="email:hello@wise.com" class="footer__eamil">hello@wise.com</a>
-                    <span class="footer__designation">
-                        Наш офис
-                    </span>
-                    <p class="footer__siti">
-                        г. Харьков, Украина
-                    </p>
-                    <p class="footer__street">
-                        ул. Гуданова, 18    61000   
-                    </p>
+                    <div class="footer__telephone"><a href="tel:+1(315)2153228"> +1 (315) 215 32 28</a></div>
+                    <div class="footer__eamil"><a href="email:hello@wise.com">hello@wise.com</a></div>
+                    <span class="footer__designation">Наш офис</span>
+                    <p class="footer__siti">г. Харьков, Украина</p>
+                    <p class="footer__street">ул. Гуданова, 18    61000</p>
                     <div class="footer__social">
                         <a href="#" class="footer__social-icon">
                             <img src="./img/fb.svg" alt="facebook">

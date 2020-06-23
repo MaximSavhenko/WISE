@@ -153,11 +153,13 @@ input[type=text] {
   display: block;
   width: 100%;
   height: 50px;
-  padding: 0 20px;
+  padding: 12px 24px;
   border: 2px solid #FFFFFF;
   background: none;
   border-radius: 16px;
   font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 700;
   color: #fff;
   transition: all 0.2s;
 }
@@ -168,16 +170,61 @@ input[type=text]:focus {
   border-color: #282b31;
 }
 
+input[type=file] {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 12px 24px;
+  border: 2px dashed #FFFFFF;
+  background: none;
+  border-radius: 16px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: #fff;
+  transition: all 0.2s;
+}
+input[type=file]::placeholder {
+  color: #FFFFFF;
+}
+input[type=file]:focus {
+  border-color: #282b31;
+}
+
+.inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.inputfile + label {
+  width: 100%;
+  padding: 15px 40px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  border: 2px dashed #FFFFFF;
+  background: none;
+  border-radius: 16px;
+  display: inline-block;
+}
+
 textarea {
   display: block;
   width: 100%;
   height: 210px;
   resize: none;
-  padding: 25px 31px;
+  padding: 12px 24px;
   border: 2px solid #FFFFFF;
   border-radius: 16px;
   background: none;
   font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 700;
   color: #fff;
   transition: all 0.2s;
 }
@@ -186,6 +233,27 @@ textarea::placeholder {
 }
 textarea:focus {
   border-color: #282b31;
+}
+
+select {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 12px 24px;
+  border: 2px solid #FFFFFF;
+  background: none;
+  border-radius: 16px;
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  color: #fff;
+  transition: all 0.2s;
+}
+
+option {
+  color: #000;
+  font-size: 14px;
+  font-family: "Montserrat";
 }
 
 .header__wrap {
@@ -787,9 +855,20 @@ textarea:focus {
 }
 .realization__imput {
   margin-right: 20px;
+  margin-bottom: 16px;
 }
 .realization__imput:last-child {
   margin-right: 0;
+}
+.realization__select {
+  margin-bottom: 16px;
+}
+.realization__textarea {
+  margin-bottom: 16px;
+}
+.realization__file {
+  margin-bottom: 16px;
+  position: relative;
 }
 .realization__img {
   width: 50%;
@@ -824,14 +903,16 @@ textarea:focus {
 }
 .footer__telephone {
   margin-bottom: 14px;
+}
+.footer__telephone a {
   font-weight: 700;
   font-size: 20px;
   color: #fff;
-  display: block;
 }
 .footer__eamil {
   margin-bottom: 32px;
-  display: block;
+}
+.footer__eamil a {
   color: #fff;
 }
 .footer__designation {
