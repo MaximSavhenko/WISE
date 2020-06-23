@@ -57,6 +57,45 @@ h1, h2, h3, h4, h5, h6, ul , p {
     flex-direction: column;
     min-height: 100vh;
   }
+
+  .arrow {
+    a {
+        color: #FB5018;
+        padding-right: 24px;
+        &::after{
+            content: '';
+            width: 2px;
+            height: 12px;
+            transform: rotate(90deg);
+            background-color: #FB5018;
+            display: block;
+            position: absolute;
+            right: 6px;
+            top: 6px;
+            @include trs;
+        }
+        &::before{
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-bottom: 2px solid #FB5018;
+            border-right: 2px solid #FB5018;
+            transform: rotate(-45deg);
+            display: block;
+            position: absolute;
+            right: 0px;
+            top: 7px;
+            @include trs;
+        }
+
+        &:hover::after {
+            right: -4px;
+        }
+        &:hover::before {
+            right: -10px;
+        }
+    }
+  }
   
   .caption {
     font-size: 48px;
@@ -467,51 +506,8 @@ option {
     &__col-link {
         position: relative;
         a {
-            font-size: 14px;
-            color: #FB5018;
-            padding-right: 24px;
-            @include trs;
-            @include b(tablet) {
-            
-            }
-
-            &:hover {
-                color: #1a91d0;
-            }
-            &::after{
-                content: '';
-                width: 2px;
-                height: 12px;
-                transform: rotate(90deg);
-                background-color: #FB5018;
-                display: block;
-                position: absolute;
-                right: 6px;
-                top: 4px;
-                @include trs;
-            }
-            &::before{
-                content: '';
-                width: 10px;
-                height: 10px;
-                border-bottom: 2px solid #FB5018;
-                border-right: 2px solid #FB5018;
-                transform: rotate(-45deg);
-                display: block;
-                position: absolute;
-                right: 0px;
-                top: 5px;
-                @include trs;
-            }
-            &:hover::after {
-                right: -4px;
-            }
-            &:hover::before {
-                right: -10px;
-            }
-        }
-
-            
+            font-size: 14px;     
+         }
     }
 
     &__col-caption {
@@ -686,41 +682,7 @@ option {
             margin-bottom: 50px;
         }
         a {
-            color: #FB5018;
             font-size: 18px;
-            padding-right: 24px;
-            &::after{
-                content: '';
-                width: 2px;
-                height: 12px;
-                transform: rotate(90deg);
-                background-color: #FB5018;
-                display: block;
-                position: absolute;
-                right: 6px;
-                top: 6px;
-                @include trs;
-            }
-            &::before{
-                content: '';
-                width: 10px;
-                height: 10px;
-                border-bottom: 2px solid #FB5018;
-                border-right: 2px solid #FB5018;
-                transform: rotate(-45deg);
-                display: block;
-                position: absolute;
-                right: 0px;
-                top: 7px;
-                @include trs;
-            }
-            &:hover::after {
-                right: -4px;
-                color: #1a91d0;
-            }
-            &:hover::before {
-                right: -10px;
-            }
         }
     }
 
@@ -827,41 +789,7 @@ option {
         margin-bottom: 60px;
         position: relative;
         a {
-            color: #FB5018;
             font-size: 18px;
-            padding-right: 24px;
-            &::after{
-                content: '';
-                width: 2px;
-                height: 12px;
-                transform: rotate(90deg);
-                background-color: #FB5018;
-                display: block;
-                position: absolute;
-                right: 6px;
-                top: 6px;
-                @include trs;
-            }
-            &::before{
-                content: '';
-                width: 10px;
-                height: 10px;
-                border-bottom: 2px solid #FB5018;
-                border-right: 2px solid #FB5018;
-                transform: rotate(-45deg);
-                display: block;
-                position: absolute;
-                right: 0px;
-                top: 7px;
-                @include trs;
-            }
-
-            &:hover::after {
-                right: -4px;
-            }
-            &:hover::before {
-                right: -10px;
-            }
         }
     }
 
