@@ -278,11 +278,11 @@ option {
 }
 
 .slick-arrow.slick-prev{
-    
+    display: none;
 }
-/* Стрелка вправо */
-.slick-arrow.slick-next{
 
+.slick-arrow.slick-next{
+    display: none;
 }
 
 
