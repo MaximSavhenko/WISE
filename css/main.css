@@ -940,6 +940,17 @@ option {
   width: 33.33%;
   padding-right: 15px;
 }
+@media (max-width: 688px) {
+  .blogs__item {
+    width: 100%;
+  }
+  .blogs__item:nth-child(2) {
+    display: none;
+  }
+  .blogs__item:nth-child(3) {
+    display: none;
+  }
+}
 .blogs__inner {
   display: flex;
   align-items: center;
@@ -970,6 +981,12 @@ option {
   .blogs__prewiews {
     max-width: 200px;
     padding: 10px 10px;
+  }
+}
+@media (max-width: 688px) {
+  .blogs__prewiews {
+    max-width: 80%;
+    width: 100%;
   }
 }
 .blogs__date {

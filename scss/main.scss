@@ -944,6 +944,15 @@ option {
     &__item {
         width: 33.33%;
         padding-right: 15px;
+        @include b(688) {
+            &:nth-child(2) {
+                display: none;
+            }
+            &:nth-child(3) {
+                display: none;
+            }
+            width: 100%;
+        }
     }
 
     &__inner {
@@ -976,6 +985,10 @@ option {
             padding: 10px 10px;
 
         } 
+        @include b(688) {
+            max-width: 80%;
+            width: 100%;
+        }
     }
 
     &__date {
