@@ -10,7 +10,7 @@
         }
 
     } @else if $point == mobile {
-        @media (max-width: 767px) {
+        @media (max-width: 768px) {
             @content;
         }
 
@@ -25,4 +25,10 @@
 
 @mixin  trs {
     transition: all .3s;
+}
+
+@mixin flex_c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

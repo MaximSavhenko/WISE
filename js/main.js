@@ -6,3 +6,17 @@ $(document).ready(function(){
 	});
 });
 
+
+
+// $('.projects__main-wrap').slick({
+// 	infinite: true,
+// 	slidesToShow: 3,
+// 	slidesToScroll: 3,
+// 	dots: true
+// });
+
+
+  
+	
+  
+
