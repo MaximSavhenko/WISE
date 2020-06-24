@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("M../fonts/ontserrat-Bold.woff") format("woff");
@@ -304,12 +305,34 @@ option {
   overflow: hidden;
 }
 
-.slick-arrow.slick-prev {
-  display: none;
+.slick-initialized.slick-slider.slick-dotted {
+  display: block;
 }
 
-.slick-arrow.slick-next {
-  display: none;
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-dots li {
+  margin-right: 10px;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active button {
+  background-color: #0000FF;
+  transition: all 0.3s;
+}
+
+/* Элемент точки */
+.slick-dots li button {
+  font-size: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #C4C4C4;
+  border-radius: 50%;
+  background-color: #fff;
 }
 
 .header__wrap {
@@ -961,6 +984,31 @@ option {
 .blogs__main-wrap {
   display: flex;
   margin-right: -15px;
+  /* Активная точка */
+  /* Элемент точки */
+}
+.blogs__main-wrap.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blogs__main-wrap.slick-dots li {
+  margin-right: 10px;
+}
+.blogs__main-wrap.slick-dots li.slick-active button {
+  background-color: #0000FF;
+  transition: all 0.3s;
+}
+.blogs__main-wrap.slick-dots li button {
+  font-size: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #C4C4C4;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.blogs__slid-item {
+  display: flex;
 }
 .blogs__item {
   width: 33.33%;

@@ -9,7 +9,13 @@ $(document).ready(function(){
 
 
 $('.projects__main-wrap').slick({
-	
+	arrows: false,
+	dots: true
+});
+
+$('.blogs__main-wrap').slick({
+	arrows: false,
+	dots: true
 });
 
 
