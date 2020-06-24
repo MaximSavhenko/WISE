@@ -264,6 +264,35 @@ option {
     font-family: "Montserrat";
 }
 
+// SLICK SLIDER ---------------------------------------
+.slider {
+    min-width: 0;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-arrow.slick-prev{
+    
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+
+}
+
+
+
+
+
+
+// SLICK SLIDER ---------------------------------------
+
+
 
 
 .header {
@@ -775,6 +804,7 @@ option {
 }
 
 .projects {
+    padding: 100px 0;
     @include b(tablet) {
         padding-bottom: 100px;
     }
@@ -809,10 +839,11 @@ option {
     &__main-wrap {
         display: flex;
         align-items: center;
+        min-width: 0;
     }
 
     &__item-slider {
-        display: flex;
+        @include flex_c;
     }
 
     &__img {
