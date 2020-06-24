@@ -575,6 +575,9 @@ option {
         @include b(mobile){
             width: 50%;
         }
+        @include b(607) {
+            width: 100%;
+        }
 
     }
 
@@ -823,18 +826,29 @@ option {
             height: 100%;
             object-fit: contain;
         }
+        @include b(515) {
+            display: none;
+        }
     }
-
     &__tackle {
         width: 35%;
         padding-left: 100px;
         @include b(tablet) {
             width: 50%;
-            
         }
         @include b(mobile){
           padding-left: 40px;  
         } 
+        @include b(515) {
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+    &__tackle-img-wrap {
+        @include b(515) {
+            @include flex_c;
+            width: 100%;
+        }
     }
 
     &__tackle-img {
@@ -852,8 +866,9 @@ option {
             height: 100%;
             object-fit: contain;
         }
-
     }
+
+   
 
     &__tackle-caption {
         color: #16182D;
@@ -864,8 +879,12 @@ option {
             font-size: 20px;
             margin-bottom: 20px;
         }
-        @include b(mobile){
-          font-size: 20px;  
+        @include b(515) {
+            padding-left: 40px;
+        }
+
+        @include b(mobile) {
+            font-size: 20px;  
         } 
     }
 
@@ -883,8 +902,12 @@ option {
 
     &__tackle-btn {
         width: 210px;
+        @include b(517) {
+            width: 100%;
+        }
     }
 }
+
 
 .blogs {
     padding-bottom: 150px;
@@ -933,6 +956,7 @@ option {
             height: 100%;
             object-fit: contain;
         }
+        
     }
 
     &__prewiews {
