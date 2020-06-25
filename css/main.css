@@ -311,23 +311,29 @@ option {
 }
 
 .slick-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 50%;
   font-size: 0;
+  border: 2px solid #000;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
 }
 
 .slick-arrow.slick-prev {
-  left: 0;
+  left: -10px;
 }
 .slick-arrow.slick-prev::after {
   content: "";
-  width: 30px;
-  height: 30px;
+  width: 10px;
+  height: 10px;
   border-bottom: 3px solid #000;
   border-left: 3px solid #000;
   transform: rotate(45deg);
   display: block;
-  border-radius: 4px;
 }
 
 .slick-arrow.slick-next {
@@ -335,13 +341,12 @@ option {
 }
 .slick-arrow.slick-next::after {
   content: "";
-  width: 30px;
-  height: 30px;
+  width: 10px;
+  height: 10px;
   border-bottom: 3px solid #000;
   border-right: 3px solid #000;
   transform: rotate(-45deg);
   display: block;
-  border-radius: 4px;
 }
 
 .slick-dots {
