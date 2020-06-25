@@ -82,6 +82,13 @@ h1, h2, h3, h4, h5, h6, ul, p {
   position: relative;
 }
 
+.--container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}
+
 .wrapper {
   overflow: hidden;
   display: flex;
@@ -1036,18 +1043,19 @@ option {
   margin-top: 40px;
 }
 .blogs__main-wrap .slick-arrow.slick-prev {
-  left: -20px;
+  left: -35px;
 }
 .blogs__main-wrap .slick-arrow.slick-next {
-  right: -20px;
+  right: -40px;
 }
 .blogs__slid-item {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 100px;
 }
 .blogs__item {
   width: 33.33%;
   padding-right: 15px;
+  position: relative;
 }
 @media (max-width: 688px) {
   .blogs__item {
@@ -1064,6 +1072,7 @@ option {
   display: flex;
   align-items: center;
   flex-direction: column;
+  justify-content: flex-end;
 }
 .blogs__inner-img {
   max-width: 450px;
@@ -1081,7 +1090,8 @@ option {
   box-shadow: 5px 5px 10px rgba(22, 24, 45, 0.2);
   border-radius: 4px;
   background-color: #fff;
-  margin-top: -50px;
+  position: absolute;
+  bottom: -50px;
 }
 @media (max-width: 1360px) {
   .blogs__prewiews {
@@ -1126,6 +1136,13 @@ option {
   .blogs__item-caption {
     font-size: 14px;
   }
+}
+.blogs .--fz__caption {
+  font-size: 19px;
+}
+.blogs .--pad__previevs {
+  padding: 20px;
+  max-width: 350px;
 }
 
 .map__wrap {
