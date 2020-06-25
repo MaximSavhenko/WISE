@@ -9,12 +9,12 @@ $(document).ready(function(){
 
 
 $('.projects__main-wrap').slick({
-	arrows: false,
+	arrows: true,
 	dots: true
 });
 
 $('.blogs__main-wrap').slick({
-	arrows: false,
+	arrows: true,
 	dots: true
 });
 

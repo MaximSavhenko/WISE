@@ -1,0 +1,48 @@
+.blogspages {
+    padding: 100px 0;
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__bread-crumbs {
+        font-family: "Open Sans";
+        font-size: 18px;
+        line-height: 25px;
+        color: #000;
+        margin-bottom: 200px;
+    }
+
+    &__caption {
+        margin-bottom: 90px;
+    }
+
+    &__img {
+        max-width: 1000px;
+        margin-bottom: 163px;
+        img {
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__content {
+    }
+
+    &__text {
+        p{
+            margin-bottom: 20px;
+        }
+    }
+
+    &__text-caption {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 60px;
+    }
+
+    &__main-wrap {
+    }
+}
