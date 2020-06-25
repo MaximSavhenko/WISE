@@ -9,6 +9,11 @@ $(document).ready(function(){
 		arrows: true,
 		dots: true
 	});
+	
+	// $('.blogs__main-wrap').slick({
+	// 	arrows: true,
+	// 	dots: true
+	// });
 });
 
   
