@@ -1294,16 +1294,18 @@ option {
     
 
     &__comment-wrap {
-        position: absolute;
-        top: 34%;
-        right: 52%;
+        display: none;
         display: flex;
-        align-items: flex-end;
+        position: absolute;
+        top: 30%;
+        left: 47%;
+        height: 100%;
         flex-direction: column;
         max-width: 340px;
     }
 
     &__avatar {
+        text-align: right;
         img {
             max-width: 100%;
         }

@@ -1282,13 +1282,17 @@ option {
   max-width: 100%;
 }
 .map__comment-wrap {
-  position: absolute;
-  top: 34%;
-  right: 52%;
+  display: none;
   display: flex;
-  align-items: flex-end;
+  position: absolute;
+  top: 30%;
+  left: 47%;
+  height: 100%;
   flex-direction: column;
   max-width: 340px;
+}
+.map__avatar {
+  text-align: right;
 }
 .map__avatar img {
   max-width: 100%;
