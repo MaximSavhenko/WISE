@@ -213,7 +213,6 @@ input[type=file]{
     z-index: -1;
 
         +label {
-        
             width: 100%;
             padding: 15px 40px;
             font-size: 14px;
@@ -355,6 +354,56 @@ option {
     background-color: #fff;
 }
 // SLICK SLIDER ---------------------------------------
+// CHECK ----------------------------
+.slide {
+    width: 80px;
+    height: 26px;
+    background: #C4C4C4;
+    position: relative;
+    border-radius: 50px;
+    &:after {
+      content: 'UA';
+      color: #16182D;
+      position: absolute;
+      right: 5px;
+      top: 5px;
+      z-index: 0;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    &:before {
+      content: 'RU';
+      color: #16182D;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      z-index: 0;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    label {
+      display: block;
+      width: 35px;
+      height: 20px;
+      cursor: pointer;
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      z-index: 1;
+      background: #fcfff4;
+      border-radius: 50px;
+      transition: all 0.4s ease;
+    }
+    input[type=checkbox] {
+      visibility: hidden;
+      &:checked + label {
+        left: 43px;
+      }
+    }    
+  }
+  
+// CHECK ----------------------------
+
 
 .header {
     // background-color: #F2F2F2;
@@ -428,7 +477,6 @@ option {
                 top: 10px;
             }
 
-            
         }
 
     } 
@@ -557,6 +605,9 @@ option {
             width: 50px;
         }
     }
+    &__nav-list-lang {
+        padding-right: 50px;
+    }
 
     &__nav-item-btn {
         a {
@@ -565,12 +616,11 @@ option {
     }
 }
 
-  .heading {
+.heading {
     min-height: 100vh;
     background-size: cover;
     background-position: 100%;
     background-repeat: no-repeat;
-    
     &__wrap {
         display: flex;
         align-items: center;
@@ -639,12 +689,11 @@ option {
 
             &:hover {
             transform: scale(1.2);
+            
             }
         }
     }
 }
-
-
 
 .services {
     padding: 73px 0;
@@ -1211,6 +1260,27 @@ option {
         }
     }
 
+    &__dot {
+        background: #FFFFFF;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        position: absolute;
+        top: 27%;
+        left: 66%;
+        @include flex_c;
+        cursor: pointer;
+        &::before {
+            content: "";
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            background-color: #FB5018;
+            display: block;
+        }
+    }
+
     &__main-wrap {
         position: relative;
     }
@@ -1349,6 +1419,18 @@ option {
     &__file {
         margin-bottom: 16px;
         position: relative;
+        label {
+            display: flex;
+            align-items: center;
+            border-radius: 16px;
+            font-size: 16px;
+            font-weight: 700;
+            color: #FFFFFF;
+            width: 100%;
+            height: 50px;
+            padding: 12px 24px;
+            border: 2px dashed #FFFFFF;
+        }
     }
 
     &__btn {
