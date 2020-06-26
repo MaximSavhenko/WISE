@@ -645,7 +645,7 @@ option {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .heading__caption {
     font-size: 30px;
     margin-bottom: 20px;
@@ -672,7 +672,7 @@ option {
     margin-bottom: 40px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .heading__descr {
     font-size: 16px;
     margin-bottom: 20px;
@@ -728,7 +728,7 @@ option {
 .services__preview {
   margin-bottom: 15px;
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .services__preview {
     font-size: 14px;
   }

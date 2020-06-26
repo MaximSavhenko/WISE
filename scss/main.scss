@@ -655,7 +655,7 @@ option {
             margin-bottom: 20px;
         }
 
-        @include b(400){
+        @include b(425){
             font-size: 30px;
             margin-bottom: 20px;
         }
@@ -678,7 +678,7 @@ option {
             margin-bottom: 40px;
         }
         
-        @include b(400){
+        @include b(425){
             font-size: 16px;
             margin-bottom: 20px;
         }
@@ -732,7 +732,7 @@ option {
 
     &__preview {
         margin-bottom: 15px;
-        @include b(400) {
+        @include b(425) {
             font-size: 14px;
         }
     }
