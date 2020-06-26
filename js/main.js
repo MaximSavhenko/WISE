@@ -7,7 +7,17 @@ $(document).ready(function(){
 	
 	$('.projects__main-wrap').slick({
 		arrows: true,
-		dots: true
+		dots: true,
+		responsive: [
+			{
+			  breakpoint: 480,
+			  settings: {
+				arrows: false,
+				slidesToShow: 1,
+				slidesToScroll: 1
+			  }
+			}
+		]
 	});
 	
 	$('.blogs__main-wrap').slick({
@@ -35,6 +45,7 @@ $(document).ready(function(){
 			{
 			  breakpoint: 480,
 			  settings: {
+				arrows: false,
 				slidesToShow: 1,
 				slidesToScroll: 1
 			  }

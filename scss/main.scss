@@ -133,6 +133,9 @@ h1, h2, h3, h4, h5, h6, ul , p {
     @include b(mobile) {
         font-size: 16px;
     }
+    @include b(400){
+        font-size: 15px;  
+    } 
 }
   
   .btn {
@@ -332,7 +335,6 @@ option {
 }
 
 //dots 
-
 .slick-dots{
     @include flex_c;
 }
@@ -652,6 +654,11 @@ option {
             font-size: 35px;
             margin-bottom: 20px;
         }
+
+        @include b(400){
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
         span {
             color: #0000FF;
             display: inline-block;
@@ -670,10 +677,19 @@ option {
         @include b(mobile){
             margin-bottom: 40px;
         }
+        
+        @include b(400){
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
     }
 
     &__btn {
         width: 210px;
+        
+        @include b(400){
+            width: 100%;
+        }
     }
     &__arrow { 
         display: flex;
@@ -716,6 +732,9 @@ option {
 
     &__preview {
         margin-bottom: 15px;
+        @include b(400) {
+            font-size: 14px;
+        }
     }
 
     &__caption {
@@ -754,7 +773,7 @@ option {
         @include b(mobile){
             width: 50%;
         }
-        @include b(320) {
+        @include b(600) {
             width: 100%;
         }
 
@@ -839,10 +858,12 @@ option {
         @include b(tablet) {
             font-size: 16px;
         }
-
         @include b(mobile){
             margin-bottom: 50px;
         } 
+        @include b(400) {
+            font-size: 14px;
+        }
         
     }
 
@@ -983,6 +1004,9 @@ option {
         }
         a {
             font-size: 18px;
+            @include b(400){
+                font-size: 14px;  
+            } 
         }
     }
 
@@ -1125,6 +1149,9 @@ option {
         position: relative;
         a {
             font-size: 18px;
+            @include b(400){
+                font-size: 14px;  
+            } 
         }
     }
 
@@ -1257,7 +1284,11 @@ option {
         p{
             font-size: 18px;
             color: #16182D;
+            @include b(400) {
+                font-size: 14px;
+            }
         }
+        
     }
 
     &__dot {
@@ -1365,6 +1396,9 @@ option {
         p{
             font-size: 18px;
             color: #16182D;
+            @include b(400) {
+                font-size: 14px;
+            }
         }
     }
 
@@ -1381,6 +1415,10 @@ option {
         @include b(mobile){
           padding: 40px 60px;  
         } 
+
+        @include b(400){
+            padding: 10px;  
+          } 
     }
 
     &__form {
@@ -1432,10 +1470,16 @@ option {
             height: 50px;
             padding: 12px 24px;
             border: 2px dashed #FFFFFF;
+            @include b(400){
+                font-size: 14px;  
+              } 
         }
     }
 
     &__btn {
+        @include b(400){
+            font-size: 14px;  
+          } 
     }
 
     &__img-wrap {
@@ -1637,11 +1681,3 @@ option {
         }
     }
 }
-
-
-
-
-
- 
-
-  
