@@ -1255,7 +1255,7 @@ option {
   height: 100%;
   object-fit: contain;
 }
-.blogs__prewiews {
+.blogs__previews {
   max-width: 426px;
   padding: 30px 45px 30px 30px;
   box-shadow: 5px 5px 10px rgba(22, 24, 45, 0.2);
@@ -1265,13 +1265,13 @@ option {
   bottom: -50px;
 }
 @media (max-width: 1360px) {
-  .blogs__prewiews {
+  .blogs__previews {
     max-width: 300px;
     padding: 20px;
   }
 }
 @media (max-width: 768px) {
-  .blogs__prewiews {
+  .blogs__previews {
     max-width: 200px;
     padding: 10px 10px;
     max-width: 80%;
@@ -1279,7 +1279,7 @@ option {
   }
 }
 @media (max-width: 600px) {
-  .blogs__prewiews {
+  .blogs__previews {
     max-width: 80%;
     bottom: -20px;
   }
@@ -1313,7 +1313,7 @@ option {
 .blogs .--fz__caption {
   font-size: 19px;
 }
-.blogs .--pad__previevs {
+.blogs .--padding__previews {
   padding: 20px;
   max-width: 350px;
 }
