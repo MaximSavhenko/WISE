@@ -416,7 +416,13 @@ option {
 
 
 .header {
-    // background-color: #F2F2F2;
+    &.active {
+        background-color: #F2F2F2; 
+        @include trs;
+        position: fixed;
+        z-index: 5;
+        width: 100%;
+    }
     &__wrap {
         display: flex;
         align-items: center;

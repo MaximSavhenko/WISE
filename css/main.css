@@ -442,6 +442,13 @@ option {
   left: 43px;
 }
 
+.header.active {
+  background-color: #F2F2F2;
+  transition: all 0.3s;
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+}
 .header__wrap {
   display: flex;
   align-items: center;

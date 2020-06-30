@@ -54,6 +54,10 @@ $(document).ready(function(){
 	});
 });
 
+$(window).on("scroll", function() {
+	$("header").toggleClass("active", $(this).scrollTop() > $(window).height());
+});
+
 function openbox(box){
 	display = document.getElementById(box).style.display;
 	if(display=='none'){
