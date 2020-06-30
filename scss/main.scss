@@ -354,7 +354,6 @@ option {
     background-color: #0000FF;
     @include trs;
 }
-/* Элемент точки */
 .slick-dots li button{
     font-size: 0;
     width: 16px;
@@ -364,7 +363,8 @@ option {
     background-color: #fff;
 }
 // SLICK SLIDER ---------------------------------------
-// CHECK ----------------------------
+
+// CHECK Lang ----------------------------
 .slide {
     width: 80px;
     height: 26px;
@@ -412,7 +412,7 @@ option {
     }    
   }
   
-// CHECK ----------------------------
+// CHECK Lang ----------------------------
 
 
 .header {

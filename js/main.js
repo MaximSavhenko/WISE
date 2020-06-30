@@ -4,6 +4,10 @@ $(document).ready(function(){
 		destination = $(elementClick).offset().top;
 		$("body,html").animate({scrollTop: destination }, 800);
 	});
+
+	$(window).on("scroll", function() {
+		$("header").toggleClass("active", $(this).scrollTop() > $(window).height());
+	});
 	
 	$('.projects__main-wrap').slick({
 		arrows: true,
@@ -52,10 +56,6 @@ $(document).ready(function(){
 			}
 		]
 	});
-});
-
-$(window).on("scroll", function() {
-	$("header").toggleClass("active", $(this).scrollTop() > $(window).height());
 });
 
 function openbox(box){

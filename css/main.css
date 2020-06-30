@@ -385,7 +385,6 @@ option {
   transition: all 0.3s;
 }
 
-/* Элемент точки */
 .slick-dots li button {
   font-size: 0;
   width: 16px;
