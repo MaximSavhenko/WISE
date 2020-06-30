@@ -76,7 +76,7 @@ function toggleMobileMenu() {
 	  btnMenu.classList.toggle('active');
 	  navWrap.classList.toggle('active');
 	};
-  };
+};
   toggleMobileMenu();
 
 
