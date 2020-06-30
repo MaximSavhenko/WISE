@@ -78,7 +78,8 @@ function toggleMobileMenu() {
 	  navWrap.classList.toggle('active');
 	};
 };
-  toggleMobileMenu();
+
+toggleMobileMenu();
 
 
   
