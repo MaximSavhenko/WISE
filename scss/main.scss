@@ -426,14 +426,16 @@ option {
 
 
 .header {
+    position: absolute;
+    width: 100%;
+    z-index: 5;
     &.active {
-        background-color: #F2F2F2; 
-        @include trs;
         position: fixed;
         top: 0;
         right: 0;
-        z-index: 5;
         width: 100%;
+        background-color: #F2F2F2; 
+        @include trs;
     }
     &__wrap {
         display: flex;
@@ -589,6 +591,9 @@ option {
     }
 
     &__nav-item-services{
+        @include b(1207) {
+            padding-right: 30px;
+        }
         @include b(tablet) {
             margin-bottom: 20px;
          }
@@ -682,12 +687,12 @@ option {
     &__wrap {
         display: flex;
         align-items: center;
-        min-height: calc(100vh - 80px);
+        min-height: 100vh;
         padding: 40px 0;
         @include b(mobile){
             justify-content: center;
         }
-        
+
     }
 
     &__inner {

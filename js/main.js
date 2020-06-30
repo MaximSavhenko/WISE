@@ -6,7 +6,8 @@ $(document).ready(function(){
 	});
 
 	$(window).on("scroll", function() {
-		$("header").toggleClass("active", $(this).scrollTop() > $(window).height());
+		// $("header").toggleClass("active", $(this).scrollTop() > $(window).height());
+		$("header").toggleClass("active", $(this).scrollTop() > 1);
 	});
 	
 	$('.projects__main-wrap').slick({

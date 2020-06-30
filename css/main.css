@@ -462,14 +462,18 @@ option {
   left: 43px;
 }
 
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 5;
+}
 .header.active {
-  background-color: #F2F2F2;
-  transition: all 0.3s;
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 5;
   width: 100%;
+  background-color: #F2F2F2;
+  transition: all 0.3s;
 }
 .header__wrap {
   display: flex;
@@ -603,6 +607,11 @@ option {
 .header__nav-item-services {
   padding-right: 60px;
 }
+@media (max-width: 1207px) {
+  .header__nav-item-services {
+    padding-right: 30px;
+  }
+}
 @media (max-width: 1024px) {
   .header__nav-item-services {
     margin-bottom: 20px;
@@ -694,7 +703,7 @@ option {
 .heading__wrap {
   display: flex;
   align-items: center;
-  min-height: calc(100vh - 80px);
+  min-height: 100vh;
   padding: 40px 0;
 }
 @media (max-width: 768px) {
