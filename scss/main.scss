@@ -178,7 +178,10 @@ h1, h2, h3, h4, h5, h6, ul , p {
     font-weight: 700;
     color: #fff;
     transition: all .2s;
-
+    @include b(490) {
+        font-size: 12px;
+        padding: 12px;
+    }
     &::placeholder {
         color: #FFFFFF;
     }
@@ -200,7 +203,6 @@ input[type=file]{
     font-weight: 700;
     color: #fff;
     transition: all .2s;
-
     &::placeholder {
         color: #FFFFFF;
     }
@@ -218,7 +220,6 @@ input[type=file]{
 	overflow: hidden;
 	position: absolute;
     z-index: -1;
-
         +label {
             width: 100%;
             padding: 15px 40px;
@@ -249,6 +250,9 @@ textarea {
     font-weight: 700;
     color: #fff;
     transition: all .2s;
+    @include b(490) {
+        font-size: 12px;
+    }
 
     &::placeholder {
         color: #FFFFFF;
@@ -275,12 +279,18 @@ select {
     -moz-appearance: none;
     appearance: none;
     cursor: pointer;
+    @include b(490) {
+        font-size: 12px;
+    }
 }
 
 option {
     color: #000;
     font-size: 14px;
     font-family: "Montserrat";
+    @include b(490) {
+        font-size: 12px;
+    }
 }
 
 // SLICK SLIDER ---------------------------------------
@@ -1368,15 +1378,11 @@ option {
         }
     }
 
-    
-
     &__comment-wrap {
         display: none;
-        display: flex;
         position: absolute;
         top: 30%;
         left: 47%;
-        height: 100%;
         flex-direction: column;
         max-width: 340px;
     }
@@ -1489,6 +1495,9 @@ option {
         margin-right: 20px;
         margin-bottom: 16px;
         width: 100%;
+        @include b(490) {
+            margin-right: 10px;
+        }
         &:last-child {
             margin-right: 0;
         }
@@ -1509,6 +1518,9 @@ option {
             top: 17px;
             right: 20px;
             pointer-events: none;
+            @include b(490) {
+                right: 10px;
+            }
         }
     }
 
@@ -1585,6 +1597,7 @@ option {
         @include b(mobile) {
             padding-right: 0;
             order: 1;
+            width: 100%;
         }
         
         &:nth-child(4) {
@@ -1666,9 +1679,6 @@ option {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        @include b(tablet) {
-
-        }
     }
 
     &__social-icon {

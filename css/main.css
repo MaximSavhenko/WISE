@@ -216,6 +216,12 @@ input[type=text] {
   color: #fff;
   transition: all 0.2s;
 }
+@media (max-width: 490px) {
+  input[type=text] {
+    font-size: 12px;
+    padding: 12px;
+  }
+}
 input[type=text]::placeholder {
   color: #FFFFFF;
 }
@@ -281,6 +287,11 @@ textarea {
   color: #fff;
   transition: all 0.2s;
 }
+@media (max-width: 490px) {
+  textarea {
+    font-size: 12px;
+  }
+}
 textarea::placeholder {
   color: #FFFFFF;
 }
@@ -306,11 +317,21 @@ select {
   appearance: none;
   cursor: pointer;
 }
+@media (max-width: 490px) {
+  select {
+    font-size: 12px;
+  }
+}
 
 option {
   color: #000;
   font-size: 14px;
   font-family: "Montserrat";
+}
+@media (max-width: 490px) {
+  option {
+    font-size: 12px;
+  }
 }
 
 .slider {
@@ -1386,11 +1407,9 @@ option {
 }
 .map__comment-wrap {
   display: none;
-  display: flex;
   position: absolute;
   top: 30%;
   left: 47%;
-  height: 100%;
   flex-direction: column;
   max-width: 340px;
 }
@@ -1514,6 +1533,11 @@ option {
   margin-bottom: 16px;
   width: 100%;
 }
+@media (max-width: 490px) {
+  .realization__imput {
+    margin-right: 10px;
+  }
+}
 .realization__imput:last-child {
   margin-right: 0;
 }
@@ -1533,6 +1557,11 @@ option {
   top: 17px;
   right: 20px;
   pointer-events: none;
+}
+@media (max-width: 490px) {
+  .realization__select::after {
+    right: 10px;
+  }
 }
 .realization__textarea {
   margin-bottom: 16px;
@@ -1613,6 +1642,7 @@ option {
   .footer__col {
     padding-right: 0;
     order: 1;
+    width: 100%;
   }
 }
 .footer__col:nth-child(4) {

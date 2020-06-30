@@ -61,7 +61,7 @@ $(document).ready(function(){
 function openbox(box){
 	display = document.getElementById(box).style.display;
 	if(display=='none'){
-		  document.getElementById(box).style.display='block';
+		  document.getElementById(box).style.display='flex';
 	}else{
 		  document.getElementById(box).style.display='none';
 	}
