@@ -271,6 +271,10 @@ select {
     font-weight: 700;
     color: #fff;
     transition: all .2s;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
 }
 
 option {
@@ -510,7 +514,6 @@ option {
         display: flex;
 
         @include b(tablet) {
-        //    justify-content: center;
             height: 100%;
         }
     }
@@ -522,7 +525,6 @@ option {
         @include b(tablet) {
             margin-left: 20px;
             display: block;
-            // justify-content: center;
          }
     }
 
@@ -1442,7 +1444,7 @@ option {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 55px 200px;
+        padding: 55px 100px;
         background: linear-gradient(106.35deg, #0000FF 16.74%, #8E7CBE 90.71%);
         border-radius: 10px;
         @include b(1246) {
@@ -1486,6 +1488,20 @@ option {
 
     &__select {
         margin-bottom: 16px;
+        position: relative;
+        &::after {
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-bottom: 2px solid #fff;
+            border-left: 2px solid #fff;
+            border-radius: 2px;
+            position: absolute;
+            transform: rotate(-45deg);
+            top: 17px;
+            right: 20px;
+            pointer-events: none;
+        }
     }
 
     &__textarea {
