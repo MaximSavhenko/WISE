@@ -383,29 +383,26 @@ option {
 .slide {
     width: 80px;
     height: 26px;
-    background: #C4C4C4;
+    background: #AFEEEE;
     position: relative;
     border-radius: 50px;
-    &:after {
-      content: 'UA';
-      color: #16182D;
-      position: absolute;
-      right: 5px;
-      top: 5px;
-      z-index: 0;
-      font-size: 16px;
-      font-weight: bold;
+
+    span {
+        color: #16182D;
+        font-size: 16px;
+        font-weight: bold;
+        position: absolute;
+        z-index: 0;
+        &:nth-child(3) {
+            top: 4px;
+            left: 10px;
+        }
+        &:last-child {
+            top: 4px;
+            right: 10px;
+        }
     }
-    &:before {
-      content: 'RU';
-      color: #16182D;
-      position: absolute;
-      top: 5px;
-      left: 5px;
-      z-index: 0;
-      font-size: 16px;
-      font-weight: bold;
-    }
+
     label {
       display: block;
       width: 35px;
@@ -415,7 +412,7 @@ option {
       top: 3px;
       left: 3px;
       z-index: 1;
-      background: #fcfff4;
+      background: #FFDEAD;
       border-radius: 50px;
       transition: all 0.4s ease;
     }
