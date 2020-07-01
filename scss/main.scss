@@ -153,7 +153,7 @@ h1, h2, h3, h4, h5, h6, ul , p {
     background-color: #FB5018;
     border-radius: 16px;
     text-align: center;
-    padding: 13px 25px;
+    padding: 13px 27px;
     color: #fff;
     cursor: pointer;
     @include trs;
@@ -679,7 +679,8 @@ option {
 
     &__nav-item-btn {
         a {
-            width: 194px;
+            display: table;
+            width: auto;
         }
     }
 }
@@ -751,7 +752,8 @@ option {
     }
 
     &__btn {
-        width: 210px;
+        display: table;
+        width: auto;
         
         @include b(400){
             width: 100%;

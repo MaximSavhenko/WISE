@@ -192,7 +192,7 @@ h1, h2, h3, h4, h5, h6, ul, p {
   background-color: #FB5018;
   border-radius: 16px;
   text-align: center;
-  padding: 13px 25px;
+  padding: 13px 27px;
   color: #fff;
   cursor: pointer;
   transition: all 0.3s;
@@ -697,7 +697,8 @@ option {
   }
 }
 .header__nav-item-btn a {
-  width: 194px;
+  display: table;
+  width: auto;
 }
 
 .heading {
@@ -771,7 +772,8 @@ option {
   }
 }
 .heading__btn {
-  width: 210px;
+  display: table;
+  width: auto;
 }
 @media (max-width: 400px) {
   .heading__btn {
