@@ -1736,10 +1736,6 @@ option {
   width: 20px;
   height: 20px;
 }
-.footer__social-icon svg :hover {
-  fill: #1a91d0;
-  transition: all 0.3s;
-}
 .footer__social-icon:last-child {
   margin-right: 0px;
 }

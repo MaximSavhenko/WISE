@@ -1695,10 +1695,6 @@ option {
             fill: #FFFFFF;
             width: 20px;
             height: 20px;
-            :hover {
-                fill: #1a91d0;
-                @include trs;
-            } 
         }
         &:last-child {
             margin-right: 0px;
