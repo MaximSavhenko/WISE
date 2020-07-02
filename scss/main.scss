@@ -225,20 +225,19 @@ input[type=file]{
 	overflow: hidden;
 	position: absolute;
     z-index: -1;
-        +label {
-            width: 100%;
-            padding: 15px 40px;
-            font-size: 14px;
-            font-family: "Montserrat";
-            font-weight: 700;
-            color: #fff;
-            cursor: pointer;
-            border: 2px dashed #FFFFFF;
-            background: none;
-            border-radius: 16px;
-            display: inline-block;
-        }
-
+    +label {
+        width: 100%;
+        padding: 15px 40px;
+        font-size: 14px;
+        font-family: "Montserrat";
+        font-weight: 700;
+        color: #fff;
+        cursor: pointer;
+        border: 2px dashed #FFFFFF;
+        background: none;
+        border-radius: 16px;
+        display: inline-block;
+    }
 }
 
 textarea {
