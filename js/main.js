@@ -9,21 +9,16 @@ $(document).ready(function(){
 		// $("header").toggleClass("active", $(this).scrollTop() > $(window).height());
 		$("header").toggleClass("active", $(this).scrollTop() > 0);
 	});
-	
-	$('.projects__main-wrap').slick({
-		arrows: true,
-		dots: true,
-		responsive: [
-			{
-			  breakpoint: 480,
-			  settings: {
-				arrows: false,
-				slidesToShow: 1,
-				slidesToScroll: 1
-			  }
-			}
-		]
-	});
+
+	$( function() {
+		var tabs = $( "#tabs" ).tabs();
+		tabs.find( ".projects__main-wrap" ).sortable({
+		  axis: "x",
+		  stop: function() {
+			tabs.tabs( "refresh" );
+		  }
+		});
+	  } );
 	
 	$('.blogs__main-wrap').slick({
 		arrows: true,
