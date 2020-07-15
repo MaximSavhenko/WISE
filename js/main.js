@@ -1,9 +1,11 @@
 $(document).ready(function(){
-	$("a").click(function () {
-		elementClick = $(this).attr("href");
-		destination = $(elementClick).offset().top;
-		$("body,html").animate({scrollTop: destination }, 800);
-	});
+	$(function() {  
+   
+		$('#up').click(function() {  
+		  $('body,html').animate({scrollTop:0},1500);  
+		  return false;  
+		})  
+	  })  
 
 	$(window).on("scroll", function() {
 		// $("header").toggleClass("active", $(this).scrollTop() > $(window).height());
@@ -11,14 +13,12 @@ $(document).ready(function(){
 	});
 
 	$( function() {
-		var tabs = $( "#tabs" ).tabs();
-		tabs.find( ".projects__main-wrap" ).sortable({
-		  axis: "x",
-		  stop: function() {
-			tabs.tabs( "refresh" );
-		  }
-		});
+		$( "#tabs" ).tabs();
 	  } );
+
+	$(".projects__tabs .projects__tabs-link").click(function() {
+		$(".projects__tabs .projects__tabs-link").removeClass("active").eq($(this).index()).addClass("active");
+	}).eq(0).addClass("active");
 	
 	$('.blogs__main-wrap').slick({
 		arrows: true,
