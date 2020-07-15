@@ -1108,7 +1108,7 @@ option {
                     position: absolute;
                     bottom: -20px;
                     left: 0px;
-                    width: 80px;
+                    width: 100%;
                     height: 4px;
                     background-color: #111; 
                     transition: all .5s;
@@ -1126,23 +1126,10 @@ option {
         margin-bottom: 20px;
         padding-bottom: 20px;
         width: 650px;
-        position: relative;
-       
-
-        
-        
-        // &::after {
-        //     content: '';
-        //     position: absolute;
-        //     bottom: 0;
-        //     left: 0;
-        //     width: 80px;
-        //     height: 4px;
-        //     background-color: #111; 
-        // }
+        transition: all .5s;       
         li {
             padding-right: 40px;
-            max-width: 200px;
+            
             &:last-child {
                 padding-right: 0;
             }
@@ -1151,8 +1138,10 @@ option {
     }
 
     &__tabs-link {
+        transition: all .5s;
         a {
             color: #ccc;
+            transition: all .5s;
         }
     }
     &__tabs-items {
