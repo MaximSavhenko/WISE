@@ -1123,7 +1123,7 @@ option {
 .projects__tabs .active a::after {
   content: "";
   position: absolute;
-  bottom: -20px;
+  bottom: 0;
   left: 0px;
   width: 100%;
   height: 4px;
@@ -1136,7 +1136,6 @@ option {
   align-items: center;
   border-bottom: 1px solid #000;
   margin-bottom: 20px;
-  padding-bottom: 20px;
   width: 650px;
   transition: all 0.5s;
 }
@@ -1148,10 +1147,16 @@ option {
 }
 .projects__tabs-link {
   transition: all 0.5s;
+  height: 40px;
 }
 .projects__tabs-link a {
   color: #ccc;
   transition: all 0.5s;
+  display: block;
+  height: 100%;
+}
+.projects__tabs-link a:hover {
+  color: #111;
 }
 .projects__tabs-items {
   width: 100%;
@@ -1164,8 +1169,8 @@ option {
 }
 .projects__tabs-img img {
   padding-right: 50px;
-  width: 500px;
-  height: 500px;
+  object-fit: contain;
+  max-width: 100%;
 }
 
 .blogs {

@@ -1106,7 +1106,7 @@ option {
                 &::after {
                     content: '';
                     position: absolute;
-                    bottom: -20px;
+                    bottom: 0;
                     left: 0px;
                     width: 100%;
                     height: 4px;
@@ -1124,7 +1124,6 @@ option {
         align-items: center;
         border-bottom: 1px solid #000;
         margin-bottom: 20px;
-        padding-bottom: 20px;
         width: 650px;
         transition: all .5s;       
         li {
@@ -1139,9 +1138,15 @@ option {
 
     &__tabs-link {
         transition: all .5s;
+        height: 40px;
         a {
             color: #ccc;
             transition: all .5s;
+            display: block;
+            height: 100%;
+            &:hover {
+                color: #111;
+            }
         }
     }
     &__tabs-items {
@@ -1155,8 +1160,8 @@ option {
         width: 33.3333%;
         img {
             padding-right: 50px;
-            width: 500px;
-            height: 500px;
+            object-fit: contain;
+            max-width: 100%;
         }
     }
 }
