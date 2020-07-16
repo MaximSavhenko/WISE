@@ -1235,7 +1235,7 @@ option {
   top: 0;
 }
 .projects__tabs-preview img:hover {
-  transform: translateY(-85%);
+  transform: translateY(-70%);
   transition: all 3s;
 }
 
