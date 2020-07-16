@@ -1197,9 +1197,15 @@ option {
         @include b(900){
             width: 50%;
         }
+        @include b(468){
+            width: 100%;
+        }
     }
 
     &__tabs-preview {
+        background-position: center 0;
+        background-repeat: no-repeat;
+        background-size: cover;
         margin-bottom: 10px;
         background-color: #ccc;
         height: 300px;
@@ -1207,16 +1213,18 @@ option {
         overflow: hidden;
         position: relative;
         box-shadow: -5px 12px 30px rgba(209, 217, 230, 0.5), 5px -12px 30px rgba(209, 217, 230, 0.3);
-          
+        &:hover {
+            // transform: translateY(0%);
+            background-position: center 100%;
+            transition:  all 3s;
+            bottom: 0;
+        }
         img {
             object-fit: cover;
             max-width: 100%;
             position: absolute;
             top: 0;
-            &:hover {
-                transform: translateY(-70%);
-                transition:  all 3s;
-            }
+            
         }
     }
 }
