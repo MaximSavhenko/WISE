@@ -1165,15 +1165,20 @@ option {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -50px;
+  margin-right: -20px;
 }
 .projects__tabs-img {
   width: 33.3333%;
+  padding-right: 20px;
 }
-.projects__tabs-img img {
-  padding-right: 50px;
-  object-fit: contain;
-  max-width: 100%;
+.projects__tabs-preview {
+  border: 1px solid #111;
+  background-color: #ccc;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .blogs {
