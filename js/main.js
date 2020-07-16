@@ -1,6 +1,5 @@
 $(document).ready(function(){
 	$(function() {  
-   
 		$('#up').click(function() {  
 		  $('body,html').animate({scrollTop:0},1500);  
 		  return false;  
@@ -13,12 +12,36 @@ $(document).ready(function(){
 	});
 
 	$( function() {
-		$( "#tabs" ).tabs();
-	  } );
-
+		$( "#tabs" ).tabs({
+			show: { effect: "fade", duration: 100 },
+ 			hide: { effect: "fade", duration: 100 },
+		});
+	  });
+	  
 	$(".projects__tabs .projects__tabs-link").click(function() {
 		$(".projects__tabs .projects__tabs-link").removeClass("active").eq($(this).index()).addClass("active");
 	}).eq(0).addClass("active");
+
+	$(function() {
+
+		let filtr = $("[data-filtr]");
+		filtr.on("click", function(){
+			let cat = $(this).data('filtr');
+
+			if(cat == 'All') {
+				$("[data-cat]").removeClass("hide");
+			} else {
+				$("[data-cat]").each(function(){
+					let workCat = $(this).data('cat');
+					if(workCat != cat) {
+						$(this).addClass('hide')
+					} else {
+						$(this).removeClass('hide')
+					}
+				});
+			}
+		});
+	});
 	
 	$('.blogs__main-wrap').slick({
 		arrows: true,
