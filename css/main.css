@@ -1223,6 +1223,7 @@ option {
   }
 }
 .projects__tabs-preview {
+  border-radius: 5px;
   background-position: center 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1233,7 +1234,6 @@ option {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  position: relative;
   box-shadow: -5px 12px 30px rgba(209, 217, 230, 0.5), 5px -12px 30px rgba(209, 217, 230, 0.3);
 }
 .projects__tabs-preview:hover {
