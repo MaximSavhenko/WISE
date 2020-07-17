@@ -222,7 +222,6 @@ input[type=text] {
 @media (max-width: 490px) {
   input[type=text] {
     font-size: 12px;
-    padding: 12px;
   }
 }
 input[type=text]::placeholder {
@@ -1552,20 +1551,20 @@ input:-webkit-autofill:active {
     padding: 50px;
   }
 }
-.realization__imput-row {
+.realization__input-row {
   display: flex;
 }
-.realization__imput {
+.realization__input {
   margin-right: 20px;
   margin-bottom: 16px;
   width: 100%;
 }
 @media (max-width: 490px) {
-  .realization__imput {
+  .realization__input {
     margin-right: 10px;
   }
 }
-.realization__imput:last-child {
+.realization__input:last-child {
   margin-right: 0;
 }
 .realization__select {
@@ -1576,8 +1575,8 @@ input:-webkit-autofill:active {
   content: "";
   width: 10px;
   height: 10px;
-  border-bottom: 2px solid #fff;
-  border-left: 2px solid #fff;
+  border-bottom: 2px solid #111;
+  border-left: 2px solid #111;
   border-radius: 2px;
   position: absolute;
   transform: rotate(-45deg);
