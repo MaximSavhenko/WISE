@@ -336,6 +336,10 @@ option {
     font-size: 12px;
   }
 }
+input:-webkit-autofill {
+  -webkit-animation-name: autofill;
+  -webkit-animation-fill-mode: both;
+}
 
 .slider {
   min-width: 0;
