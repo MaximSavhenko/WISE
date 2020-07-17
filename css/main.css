@@ -336,9 +336,13 @@ option {
     font-size: 12px;
   }
 }
-input:-webkit-autofill {
-  -webkit-animation-name: autofill;
-  -webkit-animation-fill-mode: both;
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 .slider {
@@ -1320,7 +1324,7 @@ input:-webkit-autofill {
 }
 .blogs__inner-img {
   max-width: 450px;
-  max-height: 350xp;
+  max-height: 350px;
 }
 .blogs__inner-img img {
   max-width: 100%;

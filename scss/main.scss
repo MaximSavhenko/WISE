@@ -297,17 +297,12 @@ option {
     }
 }
 
-@-webkit-keyframes autofill {
-    to {
-      color: inherit;
-      background: transparent;
-    }
-  }
-   
-  input:-webkit-autofill {
-    -webkit-animation-name: autofill;
-    -webkit-animation-fill-mode: both;
-  }
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
 
 // SLICK SLIDER ---------------------------------------
 .slider {
@@ -1310,7 +1305,7 @@ option {
 
     &__inner-img {
         max-width: 450px;
-        max-height: 350xp;
+        max-height: 350px;
         
 
         img {
